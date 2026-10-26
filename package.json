@@ -12,7 +12,7 @@
     "test:e2e": "playwright test",
     "seed": "tsx prisma/seed.ts",
     "hash-password": "tsx scripts/hash-password.ts",
-    "postinstall": "prisma generate"
+    "postinstall": "node scripts/prisma-generate.js"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",
