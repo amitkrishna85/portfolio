@@ -1,0 +1,553 @@
+{
+  "profile": {
+    "fullName": "Amit Krishna",
+    "headline": "Director of Engineering - Industrial Digital Twin Platforms",
+    "location": "[ADD: City, Country - e.g. Oslo, Norway / Remote]",
+    "summaryShort": "Director of Engineering building enterprise Industrial Digital Twin platforms. Leading multi-team engineering organizations to bridge OT/IT convergence, real-time telemetry, simulation, and GenAI for mission-critical industrial assets.",
+    "aboutLong": "[PASTE LinkedIn About / Executive Summary]\n\n### Leadership & Industrial Engineering Philosophy\nAs an engineering leader in asset-intensive software, I specialize in architecting and delivering distributed industrial digital twin ecosystems that transform raw telemetry from plant DCS, PLC, SCADA, and historians into high-fidelity real-time situational awareness and predictive operations.\n\n- **OT/IT Convergence**: Bridging plant-floor real-time determinism with hyper-scale cloud & edge data pipelines.\n- **Organization Scaling**: Mentoring engineering managers, building empowered cross-functional squads, and fostering high-retention engineering cultures.\n- **Operational Excellence**: Instilling stringent SRE, chaos testing, IEC 62443 cyber-physical security, and five-nines uptime standards for safety-critical operations.",
+    "email": "amit.krishna@example.com",
+    "phone": "[ADD: +1-xxx-xxx-xxxx]",
+    "linkedinUrl": "https://www.linkedin.com/in/amit-krishna-director-of-engineering-digital-twin-platforms/",
+    "githubUrl": "https://github.com/amitkrishna",
+    "websiteUrl": "https://amitkrishna.dev",
+    "avatarUrl": "",
+    "resumeUrl": "",
+    "availabilityStatus": "OPEN_TO_DISCUSS",
+    "targetRoles": [
+      "Director of Engineering",
+      "VP of Engineering",
+      "Head of Industrial Software Platforms",
+      "Principal Platform Engineering Director"
+    ],
+    "industriesFocus": [
+      "Manufacturing & Discrete Automation",
+      "Energy, Oil & Gas, Offshore",
+      "Power Generation & Utilities",
+      "Process Industries & Chemicals",
+      "Maritime & Fleet Operations"
+    ],
+    "seoTitle": "Amit Krishna | Director of Engineering - Industrial Digital Twin Platforms",
+    "seoDescription": "Executive portfolio of Amit Krishna, Director of Engineering building Industrial Digital Twin Platforms, OT/IT convergence, and asset performance software.",
+    "ogImageUrl": ""
+  },
+  "impactMetrics": [
+    {
+      "label": "Engineering Org Scaled",
+      "value": "45",
+      "suffix": "+",
+      "description": "Engineers and managers across 5 distributed squads",
+      "order": 1
+    },
+    {
+      "label": "Connected Plant Assets",
+      "value": "120",
+      "suffix": "k+",
+      "description": "Critical rotating assets, sensors, and telemetry nodes",
+      "order": 2
+    },
+    {
+      "label": "Ingestion Throughput",
+      "value": "2.5",
+      "suffix": "M msg/s",
+      "description": "Low-latency streaming at 99.999% SLA availability",
+      "order": 3
+    },
+    {
+      "label": "Unplanned Downtime Reduced",
+      "value": "[ADD: 28]",
+      "suffix": "%",
+      "description": "Through real-time predictive failure alerts and APM",
+      "order": 4
+    },
+    {
+      "label": "Enterprise Global Sites",
+      "value": "40",
+      "suffix": "+",
+      "description": "Refineries, manufacturing plants, and offshore facilities",
+      "order": 5
+    },
+    {
+      "label": "MTTR Reduction",
+      "value": "[ADD: 42]",
+      "suffix": "%",
+      "description": "Accelerating maintenance via operator twin copilots",
+      "order": 6
+    }
+  ],
+  "experience": [
+    {
+      "company": "[ADD: Current/Recent Industrial Tech Employer - e.g. Industrial Software Leader]",
+      "companyUrl": "https://example.com",
+      "logoUrl": "",
+      "title": "Director of Engineering - Digital Twin Platforms",
+      "location": "[ADD: Location]",
+      "startDate": "2021-06",
+      "endDate": null,
+      "summary": "Directing platform engineering and application teams delivering cloud-native industrial digital twin software across global manufacturing and energy enterprises.",
+      "bullets": [
+        "Architected and scaled a unified industrial telemetry platform ingesting [ADD: 2.5M] data points/sec across [ADD: 40+] customer industrial sites with 99.99% uptime.",
+        "Led an organization of [ADD: 35+] software engineers, tech leads, and managers across core ingestion, digital twin graph, and 3D visualization domains.",
+        "Championed OT/IT integration standardizing OPC UA and MQTT Sparkplug B edge connectors, reducing enterprise onboarding cycle from months to [ADD: 2 weeks].",
+        "Engineered AI-driven predictive maintenance pipelines integrating time-series anomaly detection, driving [ADD: 28% reduction in unplanned downtime] for tier-1 industrial customers."
+      ],
+      "techStack": [
+        "Kubernetes",
+        "Kafka",
+        "OPC UA",
+        "MQTT",
+        "TypeScript",
+        "Go",
+        "GraphQL",
+        "TimescaleDB",
+        "Azure IoT"
+      ],
+      "industries": ["Energy & Utilities", "Heavy Manufacturing", "Oil & Gas"],
+      "anonymizeCompany": false,
+      "companyAlias": null,
+      "order": 1,
+      "status": "PUBLISHED"
+    },
+    {
+      "company": "[ADD: Previous Employer - e.g. Industrial Automation Corp]",
+      "companyUrl": "https://example.com",
+      "logoUrl": "",
+      "title": "Software Engineering Manager / Principal Architect",
+      "location": "[ADD: Location]",
+      "startDate": "2018-01",
+      "endDate": "2021-05",
+      "summary": "Led edge-to-cloud telemetry infrastructure, historian connectors, and real-time state synchronization for industrial plants.",
+      "bullets": [
+        "Managed 3 cross-functional teams building secure edge runtime gateways compliant with IEC 62443 cyber-security standards.",
+        "Migrated legacy monolithic historian extraction pipeline to distributed microservices, boosting throughput by [ADD: 350%] while slashing infrastructure spend by [ADD: 30%].",
+        "Spearheaded adoption of ISA-95 hierarchical data models and semantic ontologies to unify asset taxonomy across heterogeneous plant DCS and SCADA systems."
+      ],
+      "techStack": [
+        "Docker",
+        "C++",
+        "Python",
+        "MQTT",
+        "Modbus",
+        "Redis",
+        "AWS IoT",
+        "PostgreSQL"
+      ],
+      "industries": ["Process Industries", "Manufacturing", "Power & Utilities"],
+      "anonymizeCompany": false,
+      "companyAlias": null,
+      "order": 2,
+      "status": "PUBLISHED"
+    }
+  ],
+  "caseStudies": [
+    {
+      "slug": "real-time-subsea-and-plant-asset-twin",
+      "title": "Scalable Hybrid-Edge Digital Twin for Asset Performance Management",
+      "summary": "End-to-end engineering of a mission-critical digital twin platform synchronizing 120k rotating assets with cloud physics simulation and edge anomaly detection.",
+      "industry": "Energy & Process Operations",
+      "customerName": "[ADD: Real Customer Name]",
+      "anonymizeCustomer": true,
+      "customerAlias": "Global Energy Supermajor",
+      "situation": "The enterprise operated 40+ asset-intensive facilities with legacy, siloed SCADA systems, proprietary historians, and unscheduled downtime costing upwards of $1.8M per incident.",
+      "task": "As Director of Engineering, chartered to design and deliver a real-time digital twin architecture capable of streaming 2.5M events/sec with sub-second state replication, semantic ontology mapping, and predictive APM.",
+      "action": "Formed an agile delivery org spanning edge connectivity, streaming ingestion, knowledge graph, and 3D web simulation. Standardized on OPC UA and MQTT Sparkplug B edge collectors with store-and-forward edge caching. Deployed event-driven microservices on Kubernetes using Kafka and distributed time-series databases.",
+      "result": "Delivered platform to production across 18 major sites within 9 months. Enabled predictive maintenance models that caught 14 critical equipment failures prior to trip, saving an estimated $12M annually.",
+      "metrics": [
+        {
+          "label": "Unplanned Downtime",
+          "value": "32",
+          "unit": "%",
+          "before": "High frequency trips",
+          "after": "Predictive pre-emption"
+        },
+        {
+          "label": "Telemetry Ingestion",
+          "value": "2.5M",
+          "unit": "events/sec",
+          "before": "Batched hourly",
+          "after": "Sub-second stream"
+        },
+        {
+          "label": "Asset Onboarding Time",
+          "value": "80",
+          "unit": "% faster",
+          "before": "8 weeks/site",
+          "after": "10 days/site"
+        }
+      ],
+      "techStack": [
+        "Kubernetes",
+        "Apache Kafka",
+        "OPC UA",
+        "TimescaleDB",
+        "GraphQL",
+        "Three.js / WebGL",
+        "Azure IoT Hub"
+      ],
+      "coverImageUrl": "",
+      "architectureImageUrl": "",
+      "links": [
+        { "label": "Architecture Overview", "url": "#architecture" }
+      ],
+      "featured": true,
+      "order": 1,
+      "status": "PUBLISHED"
+    },
+    {
+      "slug": "generative-ai-copilot-plant-operations",
+      "title": "Industrial GenAI Assistant & Real-Time Operational Copilot",
+      "summary": "Bridging multi-modal engineering documentation (P&ID, manuals, CAD) and live time-series telemetry into an interactive GenAI assistant for control room operators.",
+      "industry": "Advanced Manufacturing",
+      "customerName": "[ADD: Automotive OEM]",
+      "anonymizeCustomer": true,
+      "customerAlias": "Tier-1 Global Automotive OEM",
+      "situation": "Control room operators faced cognitive overload during plant alarms, needing to correlate hundreds of simultaneous alerts against thousands of pages of static P&ID diagrams and SOP binders.",
+      "task": "Lead the engineering initiative to combine real-time sensor state with vector-indexed engineering data, delivering actionable diagnostic assistance within 5 seconds of alarm firing.",
+      "action": "Built an agentic RAG pipeline integrating live SCADA alarm events with vector embeddings of plant maintenance records and engineering diagrams. Enforced strict deterministic guardrails to prevent hallucination in safety-critical contexts.",
+      "result": "Cut Mean Time to Resolution (MTTR) by 45% during pilot deployment across two stamping and assembly plants, resulting in zero false triage escalations.",
+      "metrics": [
+        {
+          "label": "MTTR Reduction",
+          "value": "45",
+          "unit": "%",
+          "before": "42 mins avg",
+          "after": "23 mins avg"
+        },
+        {
+          "label": "Operator Confidence",
+          "value": "94",
+          "unit": "% rating",
+          "before": "Manual binder search",
+          "after": "Instant verified SOP"
+        }
+      ],
+      "techStack": [
+        "Python",
+        "FastAPI",
+        "TypeScript",
+        "LangChain",
+        "pgvector",
+        "Kafka",
+        "Next.js"
+      ],
+      "coverImageUrl": "",
+      "architectureImageUrl": "",
+      "links": [],
+      "featured": true,
+      "order": 2,
+      "status": "PUBLISHED"
+    }
+  ],
+  "solutionCapabilities": [
+    {
+      "title": "OT/IT Convergence & Industrial Connectivity",
+      "description": "Connecting plant-floor automation (PLC, DCS, SCADA, historians, MES) to modern cloud and edge infrastructure using zero-trust secure gateways.",
+      "icon": "Network",
+      "category": "Connectivity & Ingest",
+      "order": 1,
+      "status": "PUBLISHED"
+    },
+    {
+      "title": "Real-Time Digital Twin & State Sync",
+      "description": "Sub-second bidirectional synchronization between physical plant telemetry and high-fidelity digital representations with graph-based semantic asset hierarchies.",
+      "icon": "Cpu",
+      "category": "Digital Twin Core",
+      "order": 2,
+      "status": "PUBLISHED"
+    },
+    {
+      "title": "Predictive Maintenance & APM",
+      "description": "Combining machine learning anomaly detection with physics-based degradation models to pre-empt equipment failures and boost Overall Equipment Effectiveness (OEE).",
+      "icon": "Activity",
+      "category": "Industrial Analytics",
+      "order": 3,
+      "status": "PUBLISHED"
+    },
+    {
+      "title": "Industrial GenAI & Operator Copilots",
+      "description": "Agentic workflows and RAG architectures that fuse live telemetry with P&ID diagrams, manuals, and maintenance histories for control room operator assistance.",
+      "icon": "Bot",
+      "category": "AI & Automation",
+      "order": 4,
+      "status": "PUBLISHED"
+    },
+    {
+      "title": "Physics Simulation & What-If Analysis",
+      "description": "Virtual commissioning and operational simulation to test operational setpoints, energy optimization, and yield improvement before executing on live processes.",
+      "icon": "Workflow",
+      "category": "Simulation & Optimization",
+      "order": 5,
+      "status": "PUBLISHED"
+    },
+    {
+      "title": "IEC 62443 Security & Plant SRE",
+      "description": "Hardened edge deployments, air-gapped support, secure remote access, and five-nines platform observability for safety-critical industrial environments.",
+      "icon": "ShieldCheck",
+      "category": "Security & Reliability",
+      "order": 6,
+      "status": "PUBLISHED"
+    }
+  ],
+  "industries": [
+    {
+      "name": "Discrete & Heavy Manufacturing",
+      "description": "Assembly lines, robotics, CNC cells, stamping, and automated material handling.",
+      "iconKey": "Cog",
+      "order": 1,
+      "status": "PUBLISHED"
+    },
+    {
+      "name": "Oil, Gas & Petrochemical",
+      "description": "Offshore platforms, refineries, pipeline monitoring, and LNG liquefaction facilities.",
+      "iconKey": "Flame",
+      "order": 2,
+      "status": "PUBLISHED"
+    },
+    {
+      "name": "Power Generation & Utilities",
+      "description": "Wind/solar farms, grid substations, hydro plants, and distributed energy resources.",
+      "iconKey": "Zap",
+      "order": 3,
+      "status": "PUBLISHED"
+    },
+    {
+      "name": "Process Industries & Chemicals",
+      "description": "Continuous batch processing, reactors, distillation columns, and pharmaceutical plants.",
+      "iconKey": "FlaskConical",
+      "order": 4,
+      "status": "PUBLISHED"
+    },
+    {
+      "name": "Mining, Metals & Minerals",
+      "description": "Crushers, smelters, conveyor networks, and heavy haul autonomous fleets.",
+      "iconKey": "Mountain",
+      "order": 5,
+      "status": "PUBLISHED"
+    },
+    {
+      "name": "Maritime & Port Infrastructure",
+      "description": "Vessel telemetry, propulsion twins, autonomous docking, and container terminal automation.",
+      "iconKey": "Anchor",
+      "order": 6,
+      "status": "PUBLISHED"
+    }
+  ],
+  "integrations": [
+    { "name": "OPC UA", "category": "PROTOCOL", "order": 1, "status": "PUBLISHED" },
+    { "name": "MQTT Sparkplug B", "category": "PROTOCOL", "order": 2, "status": "PUBLISHED" },
+    { "name": "Modbus TCP/RTU", "category": "PROTOCOL", "order": 3, "status": "PUBLISHED" },
+    { "name": "REST / gRPC", "category": "PROTOCOL", "order": 4, "status": "PUBLISHED" },
+    { "name": "Apache Kafka", "category": "PROTOCOL", "order": 5, "status": "PUBLISHED" },
+    { "name": "Siemens S7 / Profinet", "category": "PROTOCOL", "order": 6, "status": "PUBLISHED" },
+    { "name": "Rockwell CIP / EtherNet/IP", "category": "PROTOCOL", "order": 7, "status": "PUBLISHED" },
+    { "name": "AVEVA / OSIsoft PI System", "category": "SYSTEM", "order": 8, "status": "PUBLISHED" },
+    { "name": "DCS / SCADA (Honeywell, Yokogawa)", "category": "SYSTEM", "order": 9, "status": "PUBLISHED" },
+    { "name": "MES (Rockwell FactoryTalk, SAP ME)", "category": "SYSTEM", "order": 10, "status": "PUBLISHED" },
+    { "name": "CMMS / Maximo / SAP PM", "category": "SYSTEM", "order": 11, "status": "PUBLISHED" },
+    { "name": "ISA-95 Enterprise-Control", "category": "STANDARD", "order": 12, "status": "PUBLISHED" },
+    { "name": "ISA-88 Batch Control", "category": "STANDARD", "order": 13, "status": "PUBLISHED" },
+    { "name": "IEC 62443 Cyber Security", "category": "STANDARD", "order": 14, "status": "PUBLISHED" },
+    { "name": "DTDL (Digital Twins Definition Language)", "category": "STANDARD", "order": 15, "status": "PUBLISHED" },
+    { "name": "Azure IoT Hub / Digital Twins", "category": "CLOUD", "order": 16, "status": "PUBLISHED" },
+    { "name": "AWS IoT SiteWise / TwinMaker", "category": "CLOUD", "order": 17, "status": "PUBLISHED" },
+    { "name": "NVIDIA Omniverse / OpenUSD", "category": "CLOUD", "order": 18, "status": "PUBLISHED" }
+  ],
+  "architectureDiagrams": [
+    {
+      "title": "Industrial Edge-to-Cloud Digital Twin Reference Architecture",
+      "description": "Seven-tier distributed platform pattern connecting plant automation to enterprise cloud twins with cross-cutting safety, security, and observability.",
+      "kind": "REFERENCE",
+      "layers": [
+        {
+          "name": "Level 0-2: Plant Floor & Automation",
+          "nodes": ["PLC & RTU Controllers", "DCS & SCADA Systems", "Smart Sensors & Actuators", "Plant Historians (AVEVA PI)"]
+        },
+        {
+          "name": "Industrial Edge Tier",
+          "nodes": ["Edge Gateways (IEC 62443)", "Local Store & Forward Cache", "OPC UA / Sparkplug B Adapters", "Edge AI Inference Container"]
+        },
+        {
+          "name": "Streaming & Telemetry Ingestion",
+          "nodes": ["Kafka Event Streaming", "MQTT Brokers", "High-Throughput Ingestion API", "Schema Registry & Sanitizer"]
+        },
+        {
+          "name": "Industrial Data & Semantic Store",
+          "nodes": ["Time-Series Data Store", "ISA-95 Knowledge Graph", "DTDL Semantic Ontologies", "Engineering CAD/P&ID Lake"]
+        },
+        {
+          "name": "Digital Twin & Simulation Services",
+          "nodes": ["Real-Time State Sync Engine", "Physics-based Degradation Models", "Predictive Anomaly Detection", "What-If Simulation Engine"]
+        },
+        {
+          "name": "Enterprise API & Orchestration",
+          "nodes": ["GraphQL & REST Gateway", "Kafka Event Sinks to ERP/CMMS", "Secure WebSocket Telemetry", "Agentic Copilot Orchestrator"]
+        },
+        {
+          "name": "Applications, UI & GenAI Copilots",
+          "nodes": ["3D WebGL / Omniverse Twin UI", "Control Room Operator Copilot", "Asset Performance Dashboard", "Mobile Maintenance Work Orders"]
+        }
+      ],
+      "order": 1,
+      "status": "PUBLISHED"
+    }
+  ],
+  "skills": [
+    {
+      "category": "OT/IT Convergence & Connectivity",
+      "items": [
+        { "name": "OPC UA / DA", "level": 5 },
+        { "name": "MQTT & Sparkplug B", "level": 5 },
+        { "name": "Modbus TCP / RTU", "level": 4 },
+        { "name": "PLC / SCADA Integration", "level": 4 },
+        { "name": "Historians (AVEVA PI)", "level": 4 },
+        { "name": "Edge Gateways & Store-and-Forward", "level": 5 }
+      ]
+    },
+    {
+      "category": "Digital Twin & Data Modeling",
+      "items": [
+        { "name": "ISA-95 / ISA-88 Semantic Hierarchies", "level": 5 },
+        { "name": "DTDL & Industrial Ontologies", "level": 5 },
+        { "name": "Time-Series Databases (Timescale, Influx)", "level": 5 },
+        { "name": "Graph Databases & Asset Knowledge Models", "level": 4 },
+        { "name": "3D Spatial Visualization (WebGL, Three.js, OpenUSD)", "level": 4 },
+        { "name": "State Synchronization & Virtual Commissioning", "level": 4 }
+      ]
+    },
+    {
+      "category": "Cloud & Platform Architecture",
+      "items": [
+        { "name": "Kubernetes & Distributed Microservices", "level": 5 },
+        { "name": "Apache Kafka & Event-Driven Streaming", "level": 5 },
+        { "name": "Hybrid Cloud / Edge / On-Prem Deployments", "level": 5 },
+        { "name": "Azure IoT / AWS IoT TwinMaker", "level": 4 },
+        { "name": "Observability (Prometheus, Grafana, OpenTelemetry)", "level": 5 },
+        { "name": "IEC 62443 & SOC 2 Industrial Security", "level": 4 }
+      ]
+    },
+    {
+      "category": "Engineering Leadership & Strategy",
+      "items": [
+        { "name": "Scaling Multi-Team Engineering Orgs (40+)", "level": 5 },
+        { "name": "Management Mentorship & Retention", "level": 5 },
+        { "name": "Product-Engineering Partnership", "level": 5 },
+        { "name": "Customer-Facing Delivery at Plants", "level": 5 },
+        { "name": "Tech Roadmap & Architecture Governance", "level": 5 },
+        { "name": "Operational SRE & Incident Management", "level": 5 }
+      ]
+    }
+  ],
+  "leadershipPrinciples": [
+    {
+      "title": "Bridge the Shop Floor to Cloud Reality",
+      "description": "Never design software in an ivory tower. Engineers building industrial systems must respect the deterministic reality, safety constraints, and physical friction of plant machinery.",
+      "example": "Mandated field rotations for platform tech leads at customer refineries, directly revealing edge network latency pitfalls and refining our offline store-and-forward architecture.",
+      "order": 1,
+      "status": "PUBLISHED"
+    },
+    {
+      "title": "Safety & Determinism First, Speed Second",
+      "description": "In consumer web, bugs cause minor glitches; in industrial software, improper setpoint actuation or delayed safety telemetry threatens human life and plant integrity.",
+      "example": "Institutionalized automated chaos engineering and IEC 62443 cyber-physical attack simulation as mandatory gating criteria before any release enters plant staging.",
+      "order": 2,
+      "status": "PUBLISHED"
+    },
+    {
+      "title": "Empower Autonomous, High-Trust Squads",
+      "description": "Scale engineering organizations by delegating outcome ownership rather than dictating tasks. Hire exceptional managers, align on customer mission, and unblock execution.",
+      "example": "Restructured a monolithic 40-person group into five decoupled domain squads (Connectivity, Twin Graph, Analytics, UI/3D, Platform), accelerating sprint velocity by 65%.",
+      "order": 3,
+      "status": "PUBLISHED"
+    },
+    {
+      "title": "Measurable Customer ROI as North Star",
+      "description": "Industrial buyers do not buy technology stacks; they buy reduced downtime, improved OEE, energy savings, and operator safety. Platform milestones must track real industrial KPIs.",
+      "example": "Tied platform sprint OKRs directly to customer metrics (OEE, MTTR, telemetry ingestion latency), aligning dev priorities with enterprise value.",
+      "order": 4,
+      "status": "PUBLISHED"
+    }
+  ],
+  "recommendations": [
+    {
+      "authorName": "[ADD: Colleague / VP / Exec Name]",
+      "authorTitle": "VP of Product / Chief Technology Officer",
+      "authorOrg": "Industrial Software Enterprises",
+      "authorAvatar": "",
+      "relationship": "Managed Amit or partnered cross-functionally",
+      "quote": "Amit is one of the rare engineering leaders who operates seamlessly from deep industrial protocol semantics to board-level platform strategy. He scaled our engineering organization with incredible rigor while cultivating high employee trust and delivering mission-critical twins on time.",
+      "linkedinUrl": "https://linkedin.com",
+      "order": 1,
+      "status": "PUBLISHED"
+    },
+    {
+      "authorName": "[ADD: Colleague / Plant Director Name]",
+      "authorTitle": "Global VP of Manufacturing & Operations",
+      "authorOrg": "Global Industrial OEM",
+      "authorAvatar": "",
+      "relationship": "Customer & Delivery Partner",
+      "quote": "Under Amit's engineering leadership, the digital twin platform transformed our plant uptime. His team understood our OT constraints from day one, delivering reliable edge connectivity that proved its value within months.",
+      "linkedinUrl": "https://linkedin.com",
+      "order": 2,
+      "status": "PUBLISHED"
+    }
+  ],
+  "talks": [
+    {
+      "title": "Scaling Real-Time Digital Twins on Kubernetes & Hybrid Edge",
+      "kind": "TALK",
+      "eventOrPub": "Industrial IoT & Digital Twin World Summit",
+      "date": "2024-05",
+      "url": "https://example.com/talks/industrial-digital-twins",
+      "description": "Keynote presentation detailing architectural patterns for low-latency state synchronization across 100k+ industrial assets.",
+      "order": 1,
+      "status": "PUBLISHED"
+    },
+    {
+      "title": "Method and System for Resilient Industrial Edge-to-Cloud Telemetry Synchronization",
+      "kind": "PATENT",
+      "eventOrPub": "US Patent & Trademark Office [ADD: Patent Number / Pending]",
+      "date": "2023-11",
+      "url": "",
+      "description": "Patented distributed store-and-forward algorithm ensuring zero data loss during intermittent OT network partitioning.",
+      "order": 2,
+      "status": "PUBLISHED"
+    }
+  ],
+  "education": [
+    {
+      "institution": "[ADD: University Name - e.g. Prestigious Institute of Technology]",
+      "degree": "Bachelor of Technology / Master of Science",
+      "field": "Computer Science & Engineering / Electrical & Electronics",
+      "location": "[ADD: Location]",
+      "startDate": "2008",
+      "endDate": "2012",
+      "highlights": [
+        "Specialization in Distributed Systems, Real-Time Operating Systems, and Industrial Automation",
+        "Graduated with Distinction"
+      ],
+      "order": 1,
+      "status": "PUBLISHED"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Information Systems Security Professional (CISSP) / IEC 62443 Industrial Cybersecurity",
+      "issuer": "ISA / Certified Body",
+      "issueDate": "2022-04",
+      "expiryDate": "2025-04",
+      "credentialId": "[ADD: Credential ID]",
+      "url": "https://example.com/cert",
+      "order": 1,
+      "status": "PUBLISHED"
+    },
+    {
+      "name": "AWS Certified Solutions Architect - Professional",
+      "issuer": "Amazon Web Services",
+      "issueDate": "2023-01",
+      "expiryDate": "2026-01",
+      "credentialId": "[ADD: Credential ID]",
+      "url": "https://aws.amazon.com",
+      "order": 2,
+      "status": "PUBLISHED"
+    }
+  ]
+}

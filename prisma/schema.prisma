@@ -1,0 +1,246 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Profile {
+  id                 String   @id @default("singleton")
+  fullName           String
+  headline           String
+  location           String
+  summaryShort       String
+  aboutLong          String
+  email              String
+  phone              String?
+  linkedinUrl        String?
+  githubUrl          String?
+  websiteUrl         String?
+  avatarUrl          String?
+  resumeUrl          String?
+  availabilityStatus String   @default("OPEN_TO_DISCUSS") // OPEN_TO_DISCUSS | ACTIVELY_LOOKING | UNAVAILABLE
+  targetRoles        String   @default("[]") // JSON string array
+  industriesFocus    String   @default("[]") // JSON string array
+  seoTitle           String?
+  seoDescription     String?
+  ogImageUrl         String?
+  updatedAt          DateTime @updatedAt
+}
+
+model ImpactMetric {
+  id          String   @id @default(cuid())
+  label       String
+  value       String
+  suffix      String?
+  description String?
+  order       Int      @default(0)
+  visible     Boolean  @default(true)
+}
+
+model Experience {
+  id               String   @id @default(cuid())
+  company          String
+  companyUrl       String?
+  logoUrl          String?
+  title            String
+  location         String
+  startDate        String   // YYYY-MM
+  endDate          String?  // null = present
+  summary          String
+  bullets          String   @default("[]") // JSON string array of achievements
+  techStack        String   @default("[]") // JSON string array
+  industries       String   @default("[]") // JSON string array
+  anonymizeCompany Boolean  @default(false)
+  companyAlias     String?
+  order            Int      @default(0)
+  status           String   @default("PUBLISHED") // DRAFT | PUBLISHED
+  visible          Boolean  @default(true)
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+}
+
+model CaseStudy {
+  id                   String   @id @default(cuid())
+  slug                 String   @unique
+  title                String
+  summary              String
+  industry             String
+  customerName         String
+  anonymizeCustomer    Boolean  @default(true)
+  customerAlias        String?
+  situation            String
+  task                 String
+  action               String
+  result               String
+  metrics              String   @default("[]") // JSON string array of { label, value, unit, before?, after? }
+  techStack            String   @default("[]") // JSON string array
+  coverImageUrl        String?
+  architectureImageUrl String?
+  links                String?  @default("[]") // JSON string array of { label, url }
+  featured             Boolean  @default(false)
+  order                Int      @default(0)
+  status               String   @default("PUBLISHED") // DRAFT | PUBLISHED
+  visible              Boolean  @default(true)
+  createdAt            DateTime @default(now())
+  updatedAt            DateTime @updatedAt
+}
+
+model SolutionCapability {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  icon        String   @default("Cpu")
+  category    String   // Real-time asset twin, Predictive maintenance, Plant data integration, etc.
+  order       Int      @default(0)
+  status      String   @default("PUBLISHED")
+  visible     Boolean  @default(true)
+}
+
+model IndustryVertical {
+  id          String   @id @default(cuid())
+  name        String
+  description String
+  iconKey     String   @default("Factory")
+  order       Int      @default(0)
+  status      String   @default("PUBLISHED")
+  visible     Boolean  @default(true)
+}
+
+model IntegrationItem {
+  id       String   @id @default(cuid())
+  name     String
+  category String   // PROTOCOL | SYSTEM | STANDARD | CLOUD
+  order    Int      @default(0)
+  status   String   @default("PUBLISHED")
+  visible  Boolean  @default(true)
+}
+
+model ArchitectureDiagram {
+  id            String   @id @default(cuid())
+  title         String
+  description   String
+  kind          String   @default("REFERENCE") // REFERENCE | CASE
+  svgOrImageUrl String?
+  layers        String   @default("[]") // JSON string array of layers
+  order         Int      @default(0)
+  status        String   @default("PUBLISHED")
+  visible       Boolean  @default(true)
+  updatedAt     DateTime @updatedAt
+}
+
+model SkillCategory {
+  id     String  @id @default(cuid())
+  name   String
+  order  Int     @default(0)
+  skills Skill[]
+}
+
+model Skill {
+  id         String        @id @default(cuid())
+  name       String
+  level      Int?          @default(5)
+  order      Int           @default(0)
+  categoryId String
+  category   SkillCategory @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+}
+
+model Education {
+  id          String  @id @default(cuid())
+  institution String
+  degree      String
+  field       String
+  location    String?
+  startDate   String?
+  endDate     String?
+  highlights  String? @default("[]") // JSON string array
+  order       Int     @default(0)
+  status      String  @default("PUBLISHED")
+}
+
+model Certification {
+  id           String  @id @default(cuid())
+  name         String
+  issuer       String
+  issueDate    String
+  expiryDate   String?
+  credentialId String?
+  url          String?
+  order        Int     @default(0)
+  status       String  @default("PUBLISHED")
+}
+
+model Recommendation {
+  id           String   @id @default(cuid())
+  authorName   String
+  authorTitle  String
+  authorOrg    String
+  authorAvatar String?
+  relationship String?
+  quote        String
+  linkedinUrl  String?
+  order        Int      @default(0)
+  status       String   @default("PUBLISHED")
+  visible      Boolean  @default(true)
+}
+
+model LeadershipPrinciple {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  example     String?
+  order       Int      @default(0)
+  status      String   @default("PUBLISHED")
+  visible     Boolean  @default(true)
+}
+
+model Talk {
+  id          String   @id @default(cuid())
+  title       String
+  kind        String   // TALK | PUBLICATION | PATENT | AWARD
+  eventOrPub  String
+  date        String
+  url         String?
+  description String?
+  order       Int      @default(0)
+  status      String   @default("PUBLISHED")
+  visible     Boolean  @default(true)
+}
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  company   String?
+  subject   String
+  message   String
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
+
+model SiteSettings {
+  id                String   @id @default("singleton")
+  sectionVisibility String   @default("{}") // JSON string { [sectionId]: boolean }
+  sectionOrder      String   @default("[]") // JSON string string[]
+  accentColor       String   @default("cyan") // slate | cyan | emerald | amber | blue
+  defaultTheme      String   @default("dark")
+  updatedAt         DateTime @updatedAt
+}
+
+model SiteSnapshot {
+  id          String   @id @default(cuid())
+  label       String
+  description String?
+  data        String   // Complete serialized JSON state
+  createdAt   DateTime @default(now())
+}
+
+model PageView {
+  id        String   @id @default(cuid())
+  path      String
+  referrer  String?
+  userAgent String?
+  createdAt DateTime @default(now())
+}
