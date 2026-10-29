@@ -2,6 +2,8 @@ import { auth } from "@/auth";
 import { AdminSidebar } from "@/components/admin/sidebar";
 import { PublishBar } from "@/components/admin/publish-bar";
 
+export const dynamic = "force-dynamic";
+
 export default async function AdminLayout({
   children,
 }: {

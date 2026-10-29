@@ -4,6 +4,8 @@ import Link from "next/link";
 import { Printer, ArrowLeft, Mail, Phone, MapPin, Globe, Linkedin, Shield } from "lucide-react";
 import type { Metadata } from "next";
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "Resume | Amit Krishna - Director of Engineering",
   description: "Executive printable resume of Amit Krishna, Director of Engineering - Industrial Digital Twin Platforms.",

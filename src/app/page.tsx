@@ -2,34 +2,45 @@ import { prisma } from "@/lib/prisma";
 import { parseJson } from "@/lib/utils";
 import { PublicPortfolio } from "@/components/public/public-portfolio";
 import type { Metadata } from "next";
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const profile = await prisma.profile.findUnique({
-    where: { id: "singleton" },
-  });
+  try {
+    const profile = await prisma.profile.findUnique({
+      where: { id: "singleton" },
+    });
 
-  const title =
-    profile?.seoTitle ||
-    `${profile?.fullName || "Amit Krishna"} | ${profile?.headline || "Director of Engineering"}`;
-  const description =
-    profile?.seoDescription ||
-    profile?.summaryShort ||
-    "Executive portfolio of Amit Krishna, Director of Engineering building Industrial Digital Twin Platforms.";
+    const title =
+      profile?.seoTitle ||
+      `${profile?.fullName || "Amit Krishna"} | ${profile?.headline || "Director of Engineering"}`;
+    const description =
+      profile?.seoDescription ||
+      profile?.summaryShort ||
+      "Executive portfolio of Amit Krishna, Director of Engineering building Industrial Digital Twin Platforms.";
 
-  return {
-    title,
-    description,
-    openGraph: {
+    return {
       title,
       description,
-      images: profile?.ogImageUrl ? [profile.ogImageUrl] : undefined,
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-    },
-  };
+      openGraph: {
+        title,
+        description,
+        images: profile?.ogImageUrl ? [profile.ogImageUrl] : undefined,
+      },
+      twitter: {
+        card: "summary_large_image",
+        title,
+        description,
+      },
+    };
+  } catch {
+    const fallbackTitle = "Amit Krishna | Director of Engineering";
+    const fallbackDescription =
+      "Executive portfolio of Amit Krishna, Director of Engineering building Industrial Digital Twin Platforms.";
+    return {
+      title: fallbackTitle,
+      description: fallbackDescription,
+    };
+  }
 }
 
 export default async function HomePage() {

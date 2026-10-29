@@ -1,16 +1,12 @@
 import { MetadataRoute } from "next";
 import { prisma } from "@/lib/prisma";
 
+export const dynamic = "force-dynamic";
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = process.env.NEXTAUTH_URL || "https://amitkrishna.industrial-twin.dev";
 
-  // Fetch only published and visible case studies
-  const caseStudies = await prisma.caseStudy.findMany({
-    where: { status: "PUBLISHED", visible: true },
-    select: { slug: true, updatedAt: true },
-  });
-
-  const routes: MetadataRoute.Sitemap = [
+  const staticRoutes: MetadataRoute.Sitemap = [
     {
       url: `${baseUrl}`,
       lastModified: new Date(),
@@ -23,13 +19,25 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly",
       priority: 0.8,
     },
-    ...caseStudies.map((cs) => ({
+  ];
+
+  try {
+    // Fetch only published and visible case studies
+    const caseStudies = await prisma.caseStudy.findMany({
+      where: { status: "PUBLISHED", visible: true },
+      select: { slug: true, updatedAt: true },
+    });
+
+    const dynamicRoutes: MetadataRoute.Sitemap = caseStudies.map((cs) => ({
       url: `${baseUrl}/work/${cs.slug}`,
       lastModified: cs.updatedAt,
       changeFrequency: "monthly" as const,
       priority: 0.9,
-    })),
-  ];
+    }));
 
-  return routes;
+    return [...staticRoutes, ...dynamicRoutes];
+  } catch {
+    console.warn("⚠️ Warning: Failed to fetch dynamic entries for sitemap. Returning static routes only.");
+    return staticRoutes;
+  }
 }
