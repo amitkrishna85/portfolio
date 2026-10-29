@@ -18,10 +18,17 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
         }
 
         const adminEmail = process.env.ADMIN_EMAIL || "director@industrial-twin.dev";
-        let adminPasswordHash = process.env.ADMIN_PASSWORD_HASH;
+        let adminPasswordHash = process.env.ADMIN_PASSWORD_HASH?.trim();
 
         // Fallback default hash for 'AdminIndustrial2025!' (in case env var is missing or unescaped in dotenv-expand)
         const DEFAULT_ADMIN_HASH = "$2a$10$9H7b/JxYumQVDtD8aT/SweuG0XveUlnGAPewaF68WpuLRFwv1f5y.";
+
+        if (adminPasswordHash) {
+          // Strip quotes if present
+          adminPasswordHash = adminPasswordHash.replace(/^["']|["']$/g, "").trim();
+          // Unescape backslash-escaped dollar signs if pasted literally in Vercel UI
+          adminPasswordHash = adminPasswordHash.replace(/\\(\$)/g, "$1");
+        }
 
         if (!adminPasswordHash || !adminPasswordHash.startsWith("$2")) {
           adminPasswordHash = DEFAULT_ADMIN_HASH;
@@ -34,7 +41,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
           return null;
         }
 
-        const cleanHash = adminPasswordHash.trim().replace(/^["']|["']$/g, "");
+        const cleanHash = adminPasswordHash;
         const inputPassword = String(credentials.password);
 
         let passwordMatch = await bcrypt.compare(inputPassword, cleanHash);
